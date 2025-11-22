@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instituto Juan Ramón Jimenez</title>
+  <meta name="description" content="Escuela privada con niveles Jardín, Primaria y Secundaria. Turno Mañana y Tarde. Orientaciones en Educación Física y Economía y Administración." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.png">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Inicializar EmailJS cuando esté cargado
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof emailjs !== 'undefined') {
+        emailjs.init('JVOgLeNAXKunUnvoO');
+      }
+    });
+  </script>
+  <script defer src="js/script.js"></script>
+  <meta name="theme-color" content="#2a6f97" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand" aria-label="Colegio Privado">
+        <img class="brand-logo" src="images/logo-escuela2.png" alt="Logo del colegio" />
+        <span class="brand-text">Instituto Juan Ramón Jimenez</span>
+      </div>
+      <button class="nav-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="primaryNav" aria-expanded="false">
+        <span class="line"></span><span class="line"></span><span class="line"></span>
+      </button>
+      <nav id="primaryNav" class="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#niveles">Niveles</a></li>
+          <li><a href="#turnos">Turnos</a></li>
+          <li><a href="#orientaciones">Orientaciones</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#admisiones">Admisiones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-label="Presentación del instituto">
+      <div class="hero-media">
+        <img src="images/head-image.png" alt="Ingreso del Instituto Juan Ramón Jiménez con mensaje de bienvenida" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="historia" class="section alt">
+      <div class="container">
+        <div class="history-grid">
+          <div class="history-text">
+            <h2>Nuestra institución</h2>
+            <p>
+              El Instituto Juan Ramón Jiménez es una institución de gestión privada, laica y mixta, ubicada en Garín. Ofrece educación de jardín de infantes, nivel primario y nivel secundario, brindando una formación integral en jornada simple.
+            </p>
+            <p>
+              Como parte de su propuesta pedagógica, se incorpora la enseñanza del idioma inglés en un nivel general, junto con diversas actividades educativas, deportivas y culturales que enriquecen la experiencia escolar.
+            </p>
+            <p>
+              La institución se define como laica, promoviendo la libertad de conciencia y una enseñanza basada en el conocimiento, sin orientaciones religiosas ni de credo.
+            </p>
+            <p>
+              Además, el Instituto cuenta con transporte escolar optativo y servicio de kiosco interno, acompañando la vida cotidiana de los estudiantes dentro del establecimiento.
+            </p>
+          </div>
+          <div class="history-media">
+            <img src="images/Establecimiento/Entrada_Escuela1.png" alt="Frente del colegio" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="niveles" class="section">
+      <div class="container">
+        <h2>Niveles educativos</h2>
+        <div class="grid three">
+          <article id="jardin" class="card level-card">
+            <h3>Jardín</h3>
+            <p>Primeros aprendizajes en un entorno seguro, acompañando el desarrollo emocional, la socialización y la exploración del mundo que los rodea.</p>
+            <ul class="features">
+              <li>Salas organizadas por edades</li>
+              <li>Actividades lúdicas, arte y expresión corporal</li>
+              <li>Inglés desde sala de 4</li>
+              <li>Espacios equipados para juego y movimiento</li>
+            </ul>
+          </article>
+          <article id="primaria" class="card level-card">
+            <h3>Primaria</h3>
+            <p>Formación académica integral en lengua, matemática, ciencias y ciudadanía, promoviendo la autonomía, el pensamiento crítico y el trabajo colaborativo.</p>
+            <ul class="features">
+              <li>Proyectos interdisciplinarios</li>
+              <li>Talleres de tecnología, arte e inglés</li>
+              <li>Educación socioemocional</li>
+              <li>Participación en ferias culturales, científicas y deportivas</li>
+            </ul>
+          </article>
+          <article id="secundaria" class="card level-card">
+            <h3>Secundaria</h3>
+            <p>Propuesta formativa que prepara a los estudiantes para estudios superiores y para la vida en comunidad, con foco en competencias, responsabilidad y participación.</p>
+            <ul class="features">
+              <li>Acompañamiento tutorial y orientación académica</li>
+              <li>Proyectos de investigación y actividades institucionales</li>
+              <li>Enfoque en valores, ciudadanía y pensamiento crítico</li>
+              <li>Participación en eventos deportivos y comunitarios</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="turnos" class="section alt">
+      <div class="container">
+        <h2>Turnos</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>Turno Mañana</h3>
+            <p>De 8:00 a 12:00 (Jardín y Primaria) — De 7:30 a 11:45 (Secundaria)</p>
+          </div>
+          <div class="card">
+            <h3>Turno Tarde</h3>
+            <p>De 13:00 a 17:00 (Jardín y Primaria) — De 13:00 a 17:00 (Secundaria)</p>
+          </div>
+        </div>
+        <p class="note">Los horarios pueden ajustarse según normativa vigente y calendario escolar.</p>
+      </div>
+    </section>
+
+    <section id="orientaciones" class="section">
+      <div class="container">
+        <h2>Nivel Secundario — Orientaciones</h2>
+        <div class="grid two">
+          <article class="card orientation-card">
+            <h3>Bachillerato orientado en Educación Física</h3>
+            <p>Promueve hábitos saludables, liderazgo y trabajo colaborativo, integrando ciencias del deporte con formación humanística.</p>
+            <ul class="features">
+              <li>Entrenamiento, anatomía y fisiología</li>
+              <li>Deportes individuales y de equipo</li>
+              <li>Eventos y recreación</li>
+            </ul>
+          </article>
+          <article class="card orientation-card">
+            <h3>Bachillerato orientado en Economía y Administración</h3>
+            <p>Desarrolla competencias para la gestión organizacional, el análisis económico y el emprendedurismo responsable.</p>
+            <ul class="features">
+              <li>Contabilidad y costos</li>
+              <li>Marketing y gestión</li>
+              <li>Economía y finanzas</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section alt">
+      <div class="container">
+        <h2>Galería</h2>
+
+        <div class="gallery-section">
+          <h3>Establecimiento</h3>
+          <div class="gallery-strip" data-group="establecimiento">
+            <figure class="gallery-card">
+              <a href="images/Establecimiento/Entrada_Escuela1.png" data-caption="Entrada Principal al Establecimiento">
+                <img src="images/Establecimiento/Entrada_Escuela1.png" alt="Entrada Principal al Establecimiento" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Establecimiento/entrada_por_fructuoso_diaz.jpg" data-caption="Entrada Secundaria al Establecimiento">
+                <img src="images/Establecimiento/entrada_por_fructuoso_diaz.jpg" alt="Entrada Secundaria al Establecimiento" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Establecimiento/hall_principal.png" data-caption="Hall Principal">
+                <img src="images/Establecimiento/hall_principal.png" alt="Hall Principal" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Establecimiento/pasillo_aulas.jpg" data-caption="Pasillo hacia algunas de las Aulas de la Planta Baja">
+                <img src="images/Establecimiento/pasillo_aulas.jpg" alt="Pasillo hacia algunas de las Aulas de la Planta Baja" loading="lazy" />
+              </a>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Jardín</h3>
+          <div class="gallery-strip" data-group="jardin">
+            <figure class="gallery-card">
+              <a href="images/Jardín/entrada_jardin.png" data-caption="Entrada al Edificio del Jardín, ubicado en Luis Ressio 3333 (a 3 cuadras del Establecimiento Principal)">
+                <img src="images/Jardín/entrada_jardin.png" alt="Entrada al Edificio del Jardín, ubicado en Luis Ressio 3333 (a 3 cuadras del Establecimiento Principal)" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Jardín/vuelta_presencialidad.jpg" data-caption="Hall Principal del Jardín">
+                <img src="images/Jardín/vuelta_presencialidad.jpg" alt="Hall Principal del Jardín" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Jardín/vuelta_presencial1.jpg" data-caption="Vuelta a la Presencialidad">
+                <img src="images/Jardín/vuelta_presencial1.jpg" alt="Vuelta a la Presencialidad" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Jardín/vuelta_presencial2.jpg" data-caption="Vuelta a la Presencialidad">
+                <img src="images/Jardín/vuelta_presencial2.jpg" alt="Vuelta a la Presencialidad" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Jardín/vuelta_presencial3.jpg" data-caption="Vuelta a la Presencialidad">
+                <img src="images/Jardín/vuelta_presencial3.jpg" alt="Vuelta a la Presencialidad" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Jardín/visita_feria_ciencias.webp" data-caption="Visita Feria de Ciencias en Establecimiento Principal">
+                <img src="images/Jardín/visita_feria_ciencias.webp" alt="Visita Feria de Ciencias en Establecimiento Principal" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Jardín/dia_de_los_jardines.webp" data-caption="Día de los Jardines">
+                <img src="images/Jardín/dia_de_los_jardines.webp" alt="Día de los Jardines"loading="lazy" />
+              </a>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Primaria</h3>
+          <div class="gallery-strip" data-group="primaria">
+            <figure class="gallery-card">
+              <a href="images/Primaria/egresados_2009.jpg" data-caption="Egresados 2009">
+                <img src="images/Primaria/egresados_2009.jpg" alt="Egresados 2009" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Primaria/egresados_2009_2.jpg" data-caption="Egresados 2009">
+                <img src="images/Primaria/egresados_2009_2.jpg" alt="Egresados 2009" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Primaria/acto_malvinas.webp" data-caption="Acto de Malvinas">
+                <img src="images/Primaria/acto_malvinas.webp" alt="Acto de Malvinas" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Primaria/feria_de_ciencias.webp" data-caption="Feria de Ciencias">
+                <img src="images/Primaria/feria_de_ciencias.webp" alt="Feria de Ciencias" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Primaria/recorriendo_mundo.webp" data-caption="Recorriendo Mundo">
+                <img src="images/Primaria/recorriendo_mundo.webp" alt="Recorriendo Mundo" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Primaria/recorriendo_mundo2.webp" data-caption="Recorriendo Mundo">
+                <img src="images/Primaria/recorriendo_mundo2.webp" alt="Recorriendo Mundo" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Primaria/recorriendo_mundo3.webp" data-caption="Recorriendo Mundo">
+                <img src="images/Primaria/recorriendo_mundo3.webp" alt="Recorriendo Mundo" loading="lazy" />
+              </a>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Secundaria</h3>
+          <div class="gallery-strip" data-group="secundaria">
+            <figure class="gallery-card">
+              <a href="images/Secundaria/senado-alumnos.jpg" data-caption="Alumnos del establecimiento visitaron la ciudad de La Plata - 2016">
+                <img src="images/Secundaria/senado-alumnos.jpg" alt="Alumnos del establecimiento visitaron la ciudad de La Plata - 2026" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Secundaria/egresados.jpg" data-caption="Egresados 2019">
+                <img src="images/Secundaria/egresados.jpg" alt="Egresados 2019" loading="lazy" />
+              </a>
+            </figure>
+            <figure class="gallery-card">
+              <a href="images/Secundaria/egresados2.jpg" data-caption="Egresados 2019">
+                <img src="images/Secundaria/egresados2.jpg" alt="Egresados 2019" loading="lazy" />
+              </a>
+            </figure> 
+            <figure class="gallery-card">
+                <a href="images/Secundaria/4to_año_2024.jpg" data-caption="Alumnos de 4to - 2024">
+                  <img src="images/Secundaria/4to_año_2024.jpg" alt="Alumnos de 4to - 2024" loading="lazy" />
+                </a>
+              </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="admisiones" class="section">
+      <div class="container">
+        <h2>Admisiones</h2>
+        <ol class="steps">
+          <li>Completar el formulario de contacto</li>
+          <li>Agendar una entrevista y recorrido por la escuela</li>
+          <li>Presentar documentación y confirmar vacante</li>
+        </ol>
+        <a class="btn btn-primary" href="#contacto">Iniciar consulta</a>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="grid two">
+          <form class="card contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+            </div>
+            <div class="field">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required placeholder="tu@correo.com" />
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required placeholder="+54 9 11 1234-5678" />
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Contanos qué necesitás"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar consulta</button>
+            <p class="form-note">Al enviar, nos pondremos en contacto a la brevedad.</p>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+          <div class="card contact-info">
+            <h3>Información institucional</h3>
+            <p><strong>Dirección:</strong> Gabriela Mistral 3443, Garín, Pdo. de Escobar</p>
+            <p><strong>Teléfono:</strong> (0348) 447-5030</p>
+            <p><strong>Correo:</strong> instjrjimenez@gmail.com</p>
+            <p><strong>Horarios de atención:</strong> Lun a Vie, 8:00 a 17:00</p>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2099980547637!2d-58.741322499999995!3d-34.4214206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f5e7c8cace7%3A0xafcf0af6ca88a509!2sInstituto%20Juan%20Ram%C3%B3n%20Jim%C3%A9nez!5e0!3m2!1ses!2sar!4v1763671005163!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación del Instituto Juan Ramón Jiménez"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>© <span id="currentYear"></span> Instituto Juan Ramón Jimenez. Página creada por <a href="https://www.linkedin.com/in/josé-alberto-rodríguez1998" target="_blank">José Alberto Rodríguez</a>.</p>
+        <nav class="social-links" aria-label="Redes sociales">
+          <a href="https://www.facebook.com/instjuanramonjimenez" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/institutojuanramonjimenezgarin/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="https://x.com/ijrjgarin" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+            <span class="sr-only">Twitter</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <button class="lightbox-prev" aria-label="Anterior">‹</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-image" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-next" aria-label="Siguiente">›</button>
+  </div>
+</body>
+</html>
+
+
