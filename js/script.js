@@ -188,16 +188,20 @@ if (lightbox) {
     lastFocus = document.activeElement;
     document.body.style.overflow = 'hidden';
     lightbox.classList.add('open');
-    lightbox.setAttribute('aria-hidden', 'false');
+    // Eliminar aria-hidden es redundante con display:none, pero aseguramos
+    lightbox.removeAttribute('aria-hidden'); 
     show(currentIndex);
-    btnClose.focus();
+    // Pequeño delay para asegurar que el navegador procese la visibilidad antes del foco
+    setTimeout(() => {
+      btnClose.focus();
+    }, 10);
     document.addEventListener('keydown', onKeyDown);
   }
 
   function close() {
     document.body.style.overflow = '';
     lightbox.classList.remove('open');
-    lightbox.setAttribute('aria-hidden', 'true');
+    // Al cerrar, display:none ya lo oculta del accessibility tree
     document.removeEventListener('keydown', onKeyDown);
     if (lastFocus) lastFocus.focus();
   }
