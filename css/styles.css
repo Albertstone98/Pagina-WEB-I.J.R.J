@@ -316,6 +316,32 @@ a {
   transition: var(--transition);
 }
 
+/* Botón X para cerrar el menú móvil */
+.nav-close {
+  display: none;
+  /* Oculto en desktop, visible solo en móvil */
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: white;
+}
+
 /* --- HERO SECTION --- */
 .hero {
   position: relative;
@@ -1011,5 +1037,10 @@ a {
 
   .contact-info {
     padding: 1.5rem;
+  }
+
+  /* Mostrar botón X solo en móvil */
+  .nav-close {
+    display: flex;
   }
 }

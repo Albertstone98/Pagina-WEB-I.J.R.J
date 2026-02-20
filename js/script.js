@@ -1,6 +1,12 @@
 // Menú móvil accesible
 const menuToggle = document.getElementById('menuToggle');
 const primaryNav = document.getElementById('primaryNav');
+const menuClose = document.getElementById('menuClose');
+
+function closeMobileNav() {
+  primaryNav.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}
 
 if (menuToggle && primaryNav) {
   menuToggle.addEventListener('click', () => {
@@ -8,12 +14,14 @@ if (menuToggle && primaryNav) {
     menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
+  // Cerrar con el botón X
+  if (menuClose) {
+    menuClose.addEventListener('click', closeMobileNav);
+  }
+
   // Cerrar menú móvil al hacer clic en un enlace
   primaryNav.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener('click', () => {
-      primaryNav.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', closeMobileNav);
   });
 }
 
